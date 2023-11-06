@@ -10,14 +10,28 @@ trigger:
 #   vmImage: ubuntu-latest
 # strategy:
 #   matrix:
+      # Python38:
+      #   python.version: '3.8'
+      # Python39:
+      #   python.version: '3.9'
+      # Python310:
+      #   python.version: '3.10'
 #     Python37:
 #       python.version: '3.7'
+
+# steps:
+# - task: UsePythonVersion@0
+#   inputs:
+#     versionSpec: '$(python.version)'
+#   displayName: 'Use Python $(python.version)'
+
 
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '$(python.version)'
-  displayName: 'Use Python $(python.version)'
+    versionSpec: '3.11'
+
+- script: python TelegramBot.py 
 
 # - script: |
 #     python -m pip install --upgrade pip
@@ -29,6 +43,6 @@ steps:
 #     pytest
 #   displayName: 'pytest'
   
-- script: |
-    python TelegramBot.py
-    displayName: 'Run Python Script'
+# - script: |
+#     python TelegramBot.py
+#     displayName: 'Run Python Script'
