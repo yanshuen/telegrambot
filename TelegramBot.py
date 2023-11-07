@@ -1483,5 +1483,6 @@ application.add_handler(admin_message_handler)
 
 application.add_handler(CommandHandler('generate', generate_excel))
 
-#application.run_polling(allowed_updates=Update.ALL_TYPES)
-
+if __name__ == "__main__":
+    # The `host` and `port` values are set by GAE when deployed
+    application.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
