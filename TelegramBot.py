@@ -1483,5 +1483,5 @@ application.add_handler(admin_message_handler)
 
 application.add_handler(CommandHandler('generate', generate_excel))
 
-application.run_polling(allowed_updates=Update.ALL_TYPES)
+#application.run_polling(allowed_updates=Update.ALL_TYPES)
 
