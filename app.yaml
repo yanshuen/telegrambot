@@ -1,2 +1,2 @@
 runtime: python311
-entrypoint: gunicorn -b :$PORT TelegramBot:application
+entrypoint: gunicorn -b :$PORT app:application
