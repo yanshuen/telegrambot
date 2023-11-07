@@ -1482,7 +1482,3 @@ admin_message_handler = MessageHandler(filters.TEXT & ~filters.COMMAND, admin_re
 application.add_handler(admin_message_handler)
 
 application.add_handler(CommandHandler('generate', generate_excel))
-
-if __name__ == "__main__":
-    # The `host` and `port` values are set by GAE when deployed
-    application.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
