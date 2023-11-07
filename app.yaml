@@ -1,2 +1,2 @@
-runtime: python39
-entrypoint: gunicorn -b :$PORT TelegramBot:app
+runtime: python311
+entrypoint: python TelegramBot
