@@ -5,7 +5,7 @@ entrypoint: python main.py
 runtime_config:
   operating_system: ubuntu22
   runtime_version: "3.11"
-
+  docker_image: gcr.io/telegrambot-404302/telebot_dockerimg
 manual_scaling:
   instances: 1
 resources:
