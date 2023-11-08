@@ -1,2 +1,2 @@
 runtime: python311
-entrypoint: python C:\\Users\\700131654\\AppData\\Local\\Google\\Cloud SDK\\telegrambot\\main.py
+entrypoint: python C:/Users/700131654/AppData/Local/Google/Cloud SDK/telegrambot/main.py
