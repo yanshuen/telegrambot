@@ -1,2 +1,2 @@
 runtime: python311
-entrypoint: python ../main.py
+entrypoint: python /main.py
