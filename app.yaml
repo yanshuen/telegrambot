@@ -3,8 +3,8 @@ env: flex
 entrypoint: python main.py
 
 runtime_config:
-  operating_system: ubuntu22
-  runtime_version: "3.11"
+  operating_system: windows
+  python_version: 3
 
 manual_scaling:
   instances: 1
@@ -13,5 +13,3 @@ resources:
   cpu: 1
   memory_gb: 0.5
   disk_size_gb: 10
-  
-version: v2
